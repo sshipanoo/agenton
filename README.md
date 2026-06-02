@@ -39,7 +39,7 @@ Agent On installs a small privileged LaunchDaemon helper (`AgentOnHelper`) that 
 Requires Xcode 15+ and macOS 14 SDK.
 
 ```bash
-git clone https://github.com/shipanoo/agenton.git
+git clone https://github.com/sshipanoo/agenton.git
 cd agenton
 open agenton.xcodeproj
 ```
