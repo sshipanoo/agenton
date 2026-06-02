@@ -21,12 +21,32 @@
 			remoteGlobalIDString = 9663F1292FCD90BE00EFC4E9;
 			remoteInfo = agenton;
 		};
+		AA00000000000000000000A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9663F1222FCD90BE00EFC4E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9663F17F2FCE6AEE00EFC4E9;
+			remoteInfo = AgentOnHelper;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9663F17E2FCE6AEE00EFC4E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9663F12A2FCD90BE00EFC4E9 /* agenton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = agenton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9663F1392FCD90C800EFC4E9 /* agentonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = agentonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9663F1432FCD90C800EFC4E9 /* agentonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = agentonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9663F1802FCE6AEE00EFC4E9 /* AgentOnHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AgentOnHelper; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,6 +63,11 @@
 		9663F1462FCD90C900EFC4E9 /* agentonUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = agentonUITests;
+			sourceTree = "<group>";
+		};
+		9663F1812FCE6AEE00EFC4E9 /* AgentOnHelper */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AgentOnHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +94,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9663F17D2FCE6AEE00EFC4E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +110,7 @@
 				9663F12C2FCD90BE00EFC4E9 /* agenton */,
 				9663F13C2FCD90C800EFC4E9 /* agentonTests */,
 				9663F1462FCD90C900EFC4E9 /* agentonUITests */,
+				9663F1812FCE6AEE00EFC4E9 /* AgentOnHelper */,
 				9663F12B2FCD90BE00EFC4E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +121,7 @@
 				9663F12A2FCD90BE00EFC4E9 /* agenton.app */,
 				9663F1392FCD90C800EFC4E9 /* agentonTests.xctest */,
 				9663F1432FCD90C800EFC4E9 /* agentonUITests.xctest */,
+				9663F1802FCE6AEE00EFC4E9 /* AgentOnHelper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,10 +136,12 @@
 				9663F1262FCD90BE00EFC4E9 /* Sources */,
 				9663F1272FCD90BE00EFC4E9 /* Frameworks */,
 				9663F1282FCD90BE00EFC4E9 /* Resources */,
+				AA00000000000000000000A3 /* Embed Helper + LaunchDaemon */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AA00000000000000000000A2 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				9663F12C2FCD90BE00EFC4E9 /* agenton */,
@@ -163,6 +199,28 @@
 			productReference = 9663F1432FCD90C800EFC4E9 /* agentonUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9663F17F2FCE6AEE00EFC4E9 /* AgentOnHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9663F1842FCE6AEE00EFC4E9 /* Build configuration list for PBXNativeTarget "AgentOnHelper" */;
+			buildPhases = (
+				9663F17C2FCE6AEE00EFC4E9 /* Sources */,
+				9663F17D2FCE6AEE00EFC4E9 /* Frameworks */,
+				9663F17E2FCE6AEE00EFC4E9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9663F1812FCE6AEE00EFC4E9 /* AgentOnHelper */,
+			);
+			name = AgentOnHelper;
+			packageProductDependencies = (
+			);
+			productName = AgentOnHelper;
+			productReference = 9663F1802FCE6AEE00EFC4E9 /* AgentOnHelper */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +242,9 @@
 						CreatedOnToolsVersion = 26.4.1;
 						TestTargetID = 9663F1292FCD90BE00EFC4E9;
 					};
+					9663F17F2FCE6AEE00EFC4E9 = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 9663F1252FCD90BE00EFC4E9 /* Build configuration list for PBXProject "agenton" */;
@@ -203,6 +264,7 @@
 				9663F1292FCD90BE00EFC4E9 /* agenton */,
 				9663F1382FCD90C800EFC4E9 /* agentonTests */,
 				9663F1422FCD90C800EFC4E9 /* agentonUITests */,
+				9663F17F2FCE6AEE00EFC4E9 /* AgentOnHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +293,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA00000000000000000000A3 /* Embed Helper + LaunchDaemon */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/AgentOnHelper",
+				"$(SRCROOT)/AgentOnHelper/agenton.agenton.helper.plist",
+			);
+			name = "Embed Helper + LaunchDaemon";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(WRAPPER_NAME)/Contents/MacOS/AgentOnHelper",
+				"$(TARGET_BUILD_DIR)/$(WRAPPER_NAME)/Contents/Library/LaunchDaemons/agenton.agenton.helper.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -e
+HELPER_SRC=\"${BUILT_PRODUCTS_DIR}/AgentOnHelper\"
+HELPER_DST=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/Contents/MacOS/AgentOnHelper\"
+PLIST_SRC=\"${SRCROOT}/AgentOnHelper/agenton.agenton.helper.plist\"
+PLIST_DST_DIR=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/Contents/Library/LaunchDaemons\"
+PLIST_DST=\"${PLIST_DST_DIR}/agenton.agenton.helper.plist\"
+
+if [ ! -f \"${HELPER_SRC}\" ]; then
+  echo \"warning: AgentOnHelper not built at ${HELPER_SRC}\"
+  exit 0
+fi
+
+mkdir -p \"${PLIST_DST_DIR}\"
+cp -f \"${HELPER_SRC}\" \"${HELPER_DST}\"
+cp -f \"${PLIST_SRC}\" \"${PLIST_DST}\"
+
+codesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --options runtime \"${HELPER_DST}\"
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9663F1262FCD90BE00EFC4E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -253,6 +358,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9663F17C2FCE6AEE00EFC4E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +377,11 @@
 			isa = PBXTargetDependency;
 			target = 9663F1292FCD90BE00EFC4E9 /* agenton */;
 			targetProxy = 9663F1442FCD90C900EFC4E9 /* PBXContainerItemProxy */;
+		};
+		AA00000000000000000000A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9663F17F2FCE6AEE00EFC4E9 /* AgentOnHelper */;
+			targetProxy = AA00000000000000000000A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -304,10 +421,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = HZ2R649V82;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -323,7 +440,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -368,10 +485,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = HZ2R649V82;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -381,7 +498,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -393,16 +510,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ARCHS = "arm64 x86_64";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HZ2R649V82;
-				ENABLE_APP_SANDBOX = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Agent On";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -425,16 +544,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ARCHS = "arm64 x86_64";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HZ2R649V82;
-				ENABLE_APP_SANDBOX = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Agent On";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,9 +580,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HZ2R649V82;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = agenton.agentonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -480,9 +601,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HZ2R649V82;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = agenton.agentonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,7 +621,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HZ2R649V82;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = agenton.agentonUITests;
@@ -519,7 +640,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HZ2R649V82;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = agenton.agentonUITests;
@@ -530,6 +651,34 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = agenton;
+			};
+			name = Release;
+		};
+		9663F1852FCE6AEE00EFC4E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ARCHS = "arm64 x86_64";
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9663F1862FCE6AEE00EFC4E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ARCHS = "arm64 x86_64";
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -568,6 +717,15 @@
 			buildConfigurations = (
 				9663F1542FCD90C900EFC4E9 /* Debug */,
 				9663F1552FCD90C900EFC4E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9663F1842FCE6AEE00EFC4E9 /* Build configuration list for PBXNativeTarget "AgentOnHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9663F1852FCE6AEE00EFC4E9 /* Debug */,
+				9663F1862FCE6AEE00EFC4E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
